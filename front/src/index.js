@@ -12,6 +12,6 @@ root.render(
   <div>
     <Greeting title='hola' a = {[1,2,3]}/>
     <Button text = 'click me'/>
-    <TaskCard/>
+    <TaskCard ready = {false} />
   </div>
 );

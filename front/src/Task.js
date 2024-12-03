@@ -1,9 +1,13 @@
-export function TaskCard(){
+import './task.css'
 
-    const cardStyle = {background: '#202020', color: '#fff', padding: '20px'}
+export function TaskCard(props){
 
-    return <div style={cardStyle}>
-        <h1 style ={{fontWeight: "bolder"}}>Mi primer tarea</h1>
-        <p>Tarea realizada</p>
+
+    return <div className ='card'>
+        <h1>Mi primer tarea</h1>
+        <span>
+        {   props.ready ? 'Tarea realizada': 'Tarea pendiente'}
+        </span>
+        
     </div>
 }
