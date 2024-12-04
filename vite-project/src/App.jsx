@@ -5,10 +5,12 @@ import TaskForm from "./components/TaskForm"
 function App() {
   
 
-  return <div> 
+  return <main className="bg-zinc-900 h-screen"> 
+    <div className="container mx-auto">
     <TaskForm />
-    <TaskList/>
-  </div>
+    <TaskList />
+    </div>
+  </main>
 }
 
-export default App
+export default App 
